@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Matcher Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Resume<br>Matcher<br>Simulation</h1>
+      <div class="buttons">
+        <button class="play">▶</button>
+        <button class="reset">↻</button>
+      </div>
+    </div>
+
+    <!-- Candidate Skills Box -->
+    <div class="card skills">
+      <p><b>Candidate Skills</b></p>
+      <div id="skillsContainer"></div>
+      
+      <div class="add-skill">
+        <input type="text" id="skillInput" placeholder="Add skill...">
+        <button onclick="addSkill()">+</button>
+      </div>
+    </div>
+    <!-- Job Card 1 -->
+    <div class="card job">
+      <div>
+        <h3>Lead Frontend Developer</h3>
+        <div class="tags"><span>React</span><span>TypeScript</span><span>CSS</span></div>
+      </div>
+      <div class="score blue" id="score1">0%</div>
+    </div>
+
+    <!-- Job Card 2 -->
+    <div class="card job">
+      <div>
+        <h3>Senior Full Stack Engineer</h3>
+        <div class="tags"><span>Node.js</span><span>React</span><span>PostgreSQL</span></div>
+      </div>
+      <div class="score green" id="score2">0%</div>
+    </div>
+
+    <!-- Status -->
+    <div class="status">
+      <div>
+        <p>MATCH STATUS</p>
+        <b id="status">Analyzing...</b>
+      </div>
+      <div>
+        <p>TOP SCORE</p>
+        <b id="topScore">0%</b>
+      </div>
+    </div>
+  </div>
+  <div class="profile">
+    <p>candidate profile </p>
+    <select>
+      <option>full stack Dev</option>
+      <option>Fronted Dev</option>
+      <option>Backend Dev</option>
+    </select>
+  </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
